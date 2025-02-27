@@ -163,11 +163,13 @@ app.use((err, req, res, next) => {
     error: process.env.NODE_ENV === 'development' ? err.message : undefined
   });
 });
-
+app.get("/" , (req, res)=>{
+  res.send("Hello Backend Accredian!<hr>API Working!!")
+})
 // Start server
-app.listen(PORT, (req,res) => {
+app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
-  res.send("hello")
+
 });
 
 export default app;
