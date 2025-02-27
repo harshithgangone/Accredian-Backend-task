@@ -43,7 +43,7 @@ const sendReferralEmail = async (referralData) => {
             <a href="${process.env.WEBSITE_URL || 'https://example.com'}/programs/${encodeURIComponent(referralData.program)}" style="background-color: #4CAF50; color: white; padding: 12px 20px; text-decoration: none; border-radius: 4px; font-weight: bold;">Learn More About The Program</a>
           </div>
           <p>If you have any immediate questions, feel free to contact us.</p>
-          <p>Best regards,<br>The Education Team</p>
+          <p>Best regards,<br>The Accredian Team</p>
         </div>
       `
     };
@@ -60,7 +60,7 @@ const sendReferralEmail = async (referralData) => {
           <p>Thank you for referring <strong>${referralData.friendName}</strong> to our <strong>${referralData.program}</strong> program.</p>
           <p>We've sent them an email and will be reaching out to them shortly. Once they enroll, you'll receive your referral reward!</p>
           <p>Thank you for spreading the word about our programs.</p>
-          <p>Best regards,<br>The Education Team</p>
+          <p>Best regards,<br>The Accredian Team</p>
         </div>
       `
     };
