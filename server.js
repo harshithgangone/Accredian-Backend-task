@@ -165,8 +165,9 @@ app.use((err, req, res, next) => {
 });
 
 // Start server
-app.listen(PORT, () => {
+app.listen(PORT, (req,res) => {
   console.log(`Server running on port ${PORT}`);
+  res.send("hello")
 });
 
 export default app;
